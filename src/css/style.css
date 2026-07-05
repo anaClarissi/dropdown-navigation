@@ -176,4 +176,103 @@ body {
     }
 
 
+
+    /*===========================*/
+    /*            MAIN           */
+    /*===========================*/
+
+    #main .container {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .image-content {
+        flex-grow: 1;
+        max-width: 20rem;
+    }
+
+    .content {
+        flex-grow: 1;
+        justify-content: flex-end;
+        gap: 0;
+        width: 50%;
+        max-width: 25rem;
+    }
+
+    .content--body {
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .title {
+        font-size: 3.45rem;
+        text-align: left;
+        line-height: 1;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+
+    .content--footer {
+        padding-bottom: 0;
+    }
+
+}
+
+@media (min-width: 80em) {
+    
+    /*===========================*/
+    /*            MAIN           */
+    /*===========================*/
+
+    .image-content {
+        max-width: 24rem;
+    }
+
+    .content {
+        gap: 3rem;
+        max-width: 30rem;
+    }
+
+    .content--body {
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 4.1rem;
+    }
+
+}
+
+@media (min-width: 90em) {
+
+    /*===========================*/
+    /*            MAIN           */
+    /*===========================*/
+
+    #main .container {
+        justify-content: space-between;
+        gap: 10rem;
+    }
+
+    .image-content {
+        max-width: 33rem;
+    }
+
+    .content {
+        gap: 6rem;
+        max-width: 35rem;
+    }
+
+    .content--body {
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 4.85rem;
+    }
+
+    
 }
