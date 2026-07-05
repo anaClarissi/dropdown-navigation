@@ -32,7 +32,7 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: var(--font-primary);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
     font-display: swap;
     background-color: var(--gray-50);
@@ -71,6 +71,19 @@ body {
     content: url('../images/icon-menu.svg');
 }
 
+ .actions-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.actions-content .btn {
+    padding: 0.65rem 1.5rem;
+    border-radius: 0.875rem;
+}
+
+.btn-register {
+    border: 1px solid var(--gray-950);
+}
 
 
 /*===========================*/
@@ -131,4 +144,36 @@ body {
 
 .content--footer-logo {
     width: calc(25% - 1rem);
+}
+
+
+
+/*=====================================*/
+/*      -----    DESKTOP    -----      */
+/*=====================================*/
+
+@media (min-width: 60em) {
+    
+    /*===========================*/
+    /*           HEADER          */
+    /*===========================*/
+
+    #header .container-fluid {
+        gap: 1.25rem;
+        padding: 2rem 3rem;
+    }
+
+    #logo {
+        width: 7rem;
+    }
+
+    .navbar-nav {
+        gap: 1.25rem;
+    }
+
+    #navbarNav {
+        justify-content: space-between;
+    }
+
+
 }
