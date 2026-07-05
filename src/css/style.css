@@ -4,9 +4,9 @@
 
 :root {
 
-    --gray-50: hsl(0, 0%, 98%);
-    --gray-500: hsl(0, 0%, 41%);
-    --gray-950: hsl(0, 0%, 8%);
+    --gray-50: #fafafa;
+    --gray-500: #696969;
+    --gray-950: #141414;
 
     --font-primary: 'Epilogue', Arial, Helvetica, sans-serif;
 
@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -31,4 +35,100 @@ body {
     font-weight: 400;
     font-size: 1rem;
     font-display: swap;
+    background-color: var(--gray-50);
+}
+
+
+
+
+/*===========================*/
+/*           HEADER          */
+/*===========================*/
+
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--gray-50);
+}
+
+#header .container-fluid {
+    padding: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler
+
+.toggler-icon::after {
+    content: url('../images/icon-menu.svg');
+}
+
+
+
+/*===========================*/
+/*            MAIN           */
+/*===========================*/
+
+#main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.title {
+    font-size: clamp(2rem, calc(-0.534rem + 10.811vw), 2.25rem);
+    font-weight: 700;
+    color: var(--gray-950);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: clamp(1rem, calc(0.41rem + 2.778vw), 1.125rem);
+    font-weight: 500;
+    color: var(--gray-500);
+    text-align: center;
+}
+
+.btn-learn-more {
+    padding: 0.65rem 1.5rem;
+    font-size: clamp(1rem, calc(0.41rem + 2.778vw), 1.125rem);
+    font-weight: 700;
+    color: var(--gray-50);
+    border-radius: 0.875rem;
+    background-color: var(--gray-950);
+}
+
+.content--footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.content--footer-logo {
+    width: calc(25% - 1rem);
 }
