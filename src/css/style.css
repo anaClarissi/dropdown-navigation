@@ -57,6 +57,14 @@ body {
     padding: 1rem;
 }
 
+.navbar * {
+    color: var(--gray-500);
+}
+
+.navbar *:hover {
+    color: var(--gray-950);
+}
+
 .navbar *:focus {
     outline: 2px solid var(--gray-950);
     outline-offset: 4px;
@@ -244,6 +252,11 @@ body {
 
     #navbarNav {
         justify-content: space-between;
+    }
+
+    #navbarNav .nav-item {
+        display: flex;
+        align-items: center;
     }
 
     .dropdown-menu.show {
