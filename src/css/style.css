@@ -66,10 +66,8 @@ body {
 }
 
 .navbar *:focus {
-    outline: 2px solid var(--gray-950);
-    outline-offset: 4px;
+    color: var(--gray-950);
     box-shadow: none;
-    border-radius: 1rem;
 }
 
 .navbar-toggler {
@@ -126,13 +124,18 @@ body {
     font-weight: 700;
 }
 
-.btn-register:hover {
+.btn-register:hover,
+.btn-register:focus {
     outline: 2px solid var(--gray-950);
 }
 
-
 .dropdown-menu {
     border: none;
+}
+
+.dropdown:has(.dropdown-menu.show):focus {
+    outline: none;
+    border: 1px solid red;
 }
 
 .dropdown-toggle::after {
