@@ -57,6 +57,13 @@ body {
     padding: 1rem;
 }
 
+.navbar *:focus {
+    outline: 2px solid var(--gray-950);
+    outline-offset: 4px;
+    box-shadow: none;
+    border-radius: 1rem;
+}
+
 .navbar-toggler {
     border: none;
     z-index: 100;
@@ -105,6 +112,16 @@ body {
 #navbarNav.show .actions-content .btn {
     width: 100%;
 }
+
+.btn-login:hover,
+.btn-register:hover {
+    font-weight: 700;
+}
+
+.btn-register:hover {
+    outline: 2px solid var(--gray-950);
+}
+
 
 .dropdown-menu {
     border: none;
@@ -177,6 +194,17 @@ body {
     background-color: var(--gray-950);
 }
 
+.btn-learn-more:hover {
+    font-weight: 700;
+    outline: 2px solid var(--gray-950);
+}
+
+.btn-learn-more:focus {
+    outline: 2px solid var(--gray-950);
+    outline-offset: 4px;
+    box-shadow: none;
+}
+
 .content--footer {
     display: flex;
     align-items: center;
@@ -216,6 +244,14 @@ body {
 
     #navbarNav {
         justify-content: space-between;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 3px 30px 3px rgba(0, 0, 0, 0.1);
     }
 
 
