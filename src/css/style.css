@@ -59,21 +59,64 @@ body {
 
 .navbar-toggler {
     border: none;
+    z-index: 100;
 }
 
 .navbar-toggler:focus {
     box-shadow: none;
 }
 
-.navbar-toggler
+.navbar-toggler[aria-expanded="true"] .toggler-icon::after {
+    content: url('../images/icon-close-menu.svg');
+}
 
 .toggler-icon::after {
     content: url('../images/icon-menu.svg');
 }
 
+#navbarNav.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60vw;
+    padding: 4rem 1.5rem;
+    background-color: var(--gray-50);
+    box-shadow: 0 0px 0px 40vw rgba(0, 0, 0, 0.55);
+}
+
+
  .actions-content {
     display: flex;
     gap: 2rem;
+}
+
+#navbarNav.show .actions-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#navbarNav.show .actions-content .btn {
+    width: 100%;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-toggle::after {
+    border: none;
+    content: url('../images/icon-arrow-down.svg');
+}
+
+.dropdown:has(.dropdown-menu.show) .dropdown-toggle::after {
+    content: url('../images/icon-arrow-up.svg');
 }
 
 .actions-content .btn {
